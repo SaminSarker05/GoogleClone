@@ -6,6 +6,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Search from '../components/Search';
 
 function Home() {
+  
   return (
     <div className='home'>
       <div className='home-header'>
@@ -19,7 +20,6 @@ function Home() {
           <Link to="about">Images</Link>
           <AppsIcon/>
           <AccountCircleIcon/>
-
         </div>
 
       </div>
@@ -29,10 +29,6 @@ function Home() {
           <Search/>
         </div>
       </div>
-
-
-      
-
     </div>
   )
 }
