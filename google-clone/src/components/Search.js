@@ -3,14 +3,17 @@ import './Search.css';
 import SearchIcon from '@mui/icons-material/Search';
 import MicIcon from '@mui/icons-material/Mic';
 import Button from '@mui/material/Button';
+import { useNavigate } from "react-router-dom";
 
-function Search() {
+function Search({hideButtons = false}) {
 
   const [input, setInput] = useState("")
+  const navigate = useNavigate();
 
   const search = e => {
     e.preventDefault();
     console.log("you hit search", input);
+    navigate('/search');
   };
 
 
@@ -22,11 +25,18 @@ function Search() {
         <MicIcon/>
       </div>
 
-      <div className='search-buttons'>
-        <Button type='submit' onClick={ search } variant="outlined" >Google Search</Button>
-        <Button variant="outlined">I'm Feeling Lucky</Button>
+      {!hideButtons ? (
+        <div className='search-buttons'>
+          <Button type='submit' onClick={ search } variant="outlined" >Google Search</Button>
+          <Button variant="outlined">I'm Feeling Lucky</Button>
+        </div>
+      ): (
+        <div className='search-buttons-hidden'>
+          <Button type='submit' onClick={ search } variant="outlined" >Google Search</Button>
+          <Button variant="outlined">I'm Feeling Lucky</Button>
+        </div>
+      )}
 
-      </div>
     </form>
   )
 }
