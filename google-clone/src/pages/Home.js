@@ -1,17 +1,23 @@
 import React from 'react';
 import './Home.css';
 import { Link } from "react-router-dom";
+import AppsIcon from '@mui/icons-material/Apps';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 function Home() {
   return (
     <div className='home'>
       <div className='home-header'>
         <div className='home-header-left'>
-          <Link to="about">about</Link>
+          <Link to="about">About</Link>
+          <Link to="about">Store</Link>
 
         </div>
         <div className='home-header-right'>
-          hello world
+          <Link to="about">Gmail</Link>
+          <Link to="about">Images</Link>
+          <AppsIcon/>
+          <AccountCircleIcon/>
 
         </div>
 
