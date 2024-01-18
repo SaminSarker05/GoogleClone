@@ -5,5 +5,10 @@ Google Search API
 custom react hook
 firebase backend and deployment/hosting
 
-1:39:53
+custom-search-api
 
+programmable search
+
+<script async src="https://cse.google.com/cse.js?cx=a7c1ddbc0f9474f46">
+</script>
+<div class="gcse-search"></div>
