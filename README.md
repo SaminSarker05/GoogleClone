@@ -19,6 +19,8 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
 
 ## How to Use
 
+- The application is live on the web but you may clone your own instance
+
 1. Clone the repository:
    ```bash
    git clone git@github.com:SaminSarker05/GoogleClone.git
@@ -37,6 +39,9 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
    npm start
    ```
 
+## Website Images
+
+<img src="https://github.com/SaminSarker05/GoogleClone/blob/main/images/home.png" width=80%>
 
 
 
