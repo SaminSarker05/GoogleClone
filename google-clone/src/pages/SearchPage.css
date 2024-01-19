@@ -13,7 +13,6 @@
   align-items: flex-start;
   padding: 30px;
   border-bottom: 1px solid lightgray;
-
 }
 
 .search-page-header-body > .search > .search-input {
@@ -53,6 +52,45 @@
   margin-left: 5px;
 }
 
+.search-page-result {
+  margin: 40px 0; 
+}
+
+.search-page-result-count {
+  color: #70757a;
+  font-size: 14px;
+}
+
+.search-page-results {
+  max-width: 650px;
+  margin-top: 20px;
+  margin-left: 240px;
+  margin-bottom: 100px;
+}
+
+.search-page-result-title {
+  text-decoration: none;
+}
+
+.search-page-result-title:hover {
+  text-decoration: underline;
+}
+
+.search-page-result-title > h2 {
+  font-weight: 500;
+}
+
+.search-page-result-snippet {
+  margin-top: 10px;
+}
+
+.search-page-result-image {
+  object-fit: contain;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
 
 
 

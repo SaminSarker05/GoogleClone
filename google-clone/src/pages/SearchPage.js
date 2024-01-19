@@ -14,8 +14,8 @@ import FeedIcon from '@mui/icons-material/Feed';
 
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
-  // const { data } = useGoogleSearch(term);
-  const data = response;
+  const { data } = useGoogleSearch(term);
+  // const data = response;
   console.log(data);
 
   return (
@@ -71,8 +71,11 @@ function SearchPage() {
           <p className='search-page-result-count'>About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime} seconds) for {term}</p>
           {data?.items.map(item => (
             <div className='search-page-result'>
-              <a href='{item.link}'>{item.displayLink}</a>
-              <a className='search-page-result-title' href='{item.link}'>{item.title}</a>
+              {item.pagemap?.cse_image?.length > 0 && item.pagemap?.cse_image[0]?.src && (
+                <img className='search-page-result-image' src={item.pagemap?.cse_image[0]?.src }/>
+              )}
+              <a href={item.link}>{item.displayLink}</a>
+              <a className='search-page-result-title' href={item.link}><h2>{item.title}</h2></a>
               <p className='search-page-result-snippet'>{item.snippet}</p>
             </div>
           ))}
