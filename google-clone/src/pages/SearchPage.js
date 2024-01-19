@@ -2,7 +2,6 @@ import React from 'react';
 import { useStateValue } from '../StateProvider';
 import useGoogleSearch from '../useGoogle';
 import './SearchPage.css';
-import response from '../Response';
 import { Link } from "react-router-dom";
 import Search from '../components/SearchBar';
 import SearchIcon from '@mui/icons-material/Search';
