@@ -19,10 +19,23 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
 
 ## How to Use
 
-- ```bash
-  cd
-  
-  ```
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:SaminSarker05/GoogleClone.git
+   ```
+2. Change into Project Directory:
+   ```bash
+   cd GoogleClone/google-clone
+   ```
+3. Install Project Dependencies:
+   ```bash
+   npm install package.json
+   npm install react-scripts
+   ```
+4. Start the React Application:
+   ```bash
+   npm start
+   ```
 
 
 
