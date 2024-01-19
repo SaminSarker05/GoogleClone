@@ -21,7 +21,7 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
 
 1. Clone the repository:
    ```bash
-   git clone git@github.com:SaminSarker05/EtherBlock.git
+   git clone git@github.com:SaminSarker05/GoogleClone.git
    ```
 2. Change into Project Directory:
    ```bash
