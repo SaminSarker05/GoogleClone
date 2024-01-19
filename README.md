@@ -20,7 +20,13 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
 ## How to Use
 
 - ```bash
-  cd
+  1. git clone
+  2. cd GoogleClone
+  3. cd google-clone
+  4. npm install package.json
+  5. npm install react-scripts
+  6. npm start
+  
   
   ```
 
