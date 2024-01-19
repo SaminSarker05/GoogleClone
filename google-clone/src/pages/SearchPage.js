@@ -3,7 +3,7 @@ import { useStateValue } from '../StateProvider';
 import useGoogleSearch from '../useGoogle';
 import './SearchPage.css';
 import response from '../Response';
-import { Link } from '@mui/material';
+import { Link } from "react-router-dom";
 import Search from '../components/SearchBar';
 import SearchIcon from '@mui/icons-material/Search';
 import PhotoIcon from '@mui/icons-material/Photo';
@@ -15,8 +15,6 @@ import FeedIcon from '@mui/icons-material/Feed';
 function SearchPage() {
   const [{ term }, dispatch] = useStateValue();
   // const { data } = useGoogleSearch(term);
-
-  
   const data = response;
   console.log(data);
 
@@ -25,8 +23,6 @@ function SearchPage() {
       <div className='search-page-header'>
         <Link to="/">
           <img className='search-page-logo' src='https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png' alt='google'/>
-          
-
         </Link>
         <div className='search-page-header-body'>
           <Search hideButtons />
@@ -64,18 +60,24 @@ function SearchPage() {
               <div className='search-page-option'>
                 <Link to='/all'>Tools</Link>
               </div>
-
             </div>
-
           </div>
-
         </div>
         
-
       </div>
-      <div className='search-page-results'>
-
-      </div>
+      
+      { term && (
+        <div className='search-page-results'>
+          <p className='search-page-result-count'>About {data?.searchInformation.formattedTotalResults} results ({data?.searchInformation.formattedSearchTime} seconds) for {term}</p>
+          {data?.items.map(item => (
+            <div className='search-page-result'>
+              <a href='{item.link}'>{item.displayLink}</a>
+              <a className='search-page-result-title' href='{item.link}'>{item.title}</a>
+              <p className='search-page-result-snippet'>{item.snippet}</p>
+            </div>
+          ))}
+        </div>
+      )}
 
     </div>
   )
