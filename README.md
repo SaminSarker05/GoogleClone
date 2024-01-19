@@ -5,15 +5,16 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
 ## Features
 
 - `Custom React Hook`: Streamlines interaction with Google Search API
+- `Context API` : Enables global sharing of states and values among components
+- `Firebase backend` : Data handling and website deployment using Firebase hosting
 - `Responsive Design` : Instant refresh and navigation between pages using react-router-dom
-- `Firebase backend` : Website deployed live using Firebase hosting
 
 
 ## Tech Stack
 
-- `HTML, CSS`: Backend language for functions and logic
-- `React JS`: API platform for endpoint testing
-- `Firebase`: Hash function for cryptographic hashes
+- `HTML, CSS, Material UI`: Frontend development, styling, and special icons
+- `React JS`: Frontend library for user interface, routing, and responsiveness
+- `Firebase`: Backend for database management and hosting
 
 
 ## How to Use
