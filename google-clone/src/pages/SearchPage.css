@@ -70,6 +70,7 @@
 
 .search-page-result-title {
   text-decoration: none;
+  opacity: 80%;
 }
 
 .search-page-result-title:hover {
