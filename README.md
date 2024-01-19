@@ -19,16 +19,23 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
 
 ## How to Use
 
-- ```bash
-  1. git clone
-  2. cd GoogleClone
-  3. cd google-clone
-  4. npm install package.json
-  5. npm install react-scripts
-  6. npm start
-  
-  
-  ```
+1. Clone the repository:
+   ```bash
+   git clone git@github.com:SaminSarker05/EtherBlock.git
+   ```
+2. Change into Project Directory:
+   ```bash
+   cd GoogleClone/google-clone
+   ```
+3. Install Project Dependencies:
+   ```bash
+   npm install package.json
+   npm install react-scripts
+   ```
+4. Start the React Application:
+   ```bash
+   npm start
+   ```
 
 
 
