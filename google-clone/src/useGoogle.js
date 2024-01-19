@@ -10,7 +10,7 @@ const useGoogleSearch = (term) => {
   useEffect(() => {
     const fetch_data = async() => {
       fetch(
-        `https://cat-fact.herokuapp.com/facts/`
+        `https://www.googleapis.com/customsearch/v1?key=${API}&cx=${ENGINE}&q=${term}`
       )
       .then(response => response.json()).then(result => {
         setData(result)
@@ -26,10 +26,3 @@ const useGoogleSearch = (term) => {
 }
 
 export default useGoogleSearch
-
-
-// GET https://customsearch.googleapis.com/customsearch/v1?cx=${ENGINE}&q=${term}&key=${API} 
-
-// HTTP/1.1
-
-// Accept: application/json
