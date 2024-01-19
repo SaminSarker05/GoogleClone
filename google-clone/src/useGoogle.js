@@ -10,7 +10,7 @@ const useGoogleSearch = (term) => {
   useEffect(() => {
     const fetch = async() => {
       fetch(
-        `https://customsearch.googleapis.com/customsearch/v1?cx=${ENGINE}&q=${term}&key=${API}`
+        `http://127.0.0.1:5000/mine`
       )
       .then(response => response.json()).then(result => {
         setData(result)
