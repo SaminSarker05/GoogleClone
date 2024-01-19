@@ -23,4 +23,36 @@
   max-width: unset;
 }
 
+.search-page-options {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: gray;
+}
+
+.search-page-options-left, .search-page-options-right {
+  display: flex;
+}
+
+.search-page-options a {
+  text-decoration: none;
+  color: gray;
+}
+
+.search-page-options-right {
+  margin-left: 80px;
+}
+
+.search-page-option {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.search-page-option a {
+  margin-left: 5px;
+}
+
+
+
 
