@@ -8,16 +8,16 @@ const useGoogleSearch = (term) => {
 
 
   useEffect(() => {
-    const fetch = async() => {
+    const fetch_data = async() => {
       fetch(
-        `http://127.0.0.1:5000/mine`
+        `https://cat-fact.herokuapp.com/facts/`
       )
       .then(response => response.json()).then(result => {
         setData(result)
       })
     }
 
-    fetch();
+    fetch_data();
 
   }, [term]) 
 
