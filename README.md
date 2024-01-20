@@ -2,6 +2,9 @@
 
 Users can navigate the web using a simple interface utilizing MaterialUI and React JS that mirror's Google search engine. Search page responses are pulled from the Google Search API to display real time websites with associated links and descriptions. A React application with a Firebase backend for deployment using modular component structure to enhance organization and maintainability.
 
+- Live Server: https://clone-d60bd.web.app
+- `100 query limit per day`
+
 ## Features
 
 - `Custom React Hook`: Streamlines interaction with Google Search API
@@ -96,8 +99,3 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
 - Enable account creation and history search and preview
 - Search recommendations depending on previous queries
 
-
-## Live Server
-
-- https://clone-d60bd.web.app
-- 100 query limit per day
