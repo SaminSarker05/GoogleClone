@@ -39,14 +39,6 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
    npm start
    ```
 
-## Website Images
-
-- Home Page where users can query items
-<img src="https://github.com/SaminSarker05/GoogleClone/blob/main/images/home.png" width=80%>
-
-- Search Page queries results from Google with Links
-<img src="https://github.com/SaminSarker05/GoogleClone/blob/main/images/search.png" width=80%>
-
 ## React Components
 
 <table>
@@ -59,7 +51,6 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
 <samp>Uses React Component API to create global state the enwraps application</samp>
 </td>
 </tr>
-
    
 <tr>
 <td width="20%"">
@@ -89,6 +80,22 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
 </tr>
   
 </table>
+
+## Website Images
+
+- Home Page where users can query items
+<img src="https://github.com/SaminSarker05/GoogleClone/blob/main/images/home.png" width=80%>
+
+- Search Page queries results from Google with Links
+<img src="https://github.com/SaminSarker05/GoogleClone/blob/main/images/search.png" width=80%>
+
+
+## Future Enhancements
+
+- Add search filters and sorting options
+- Enable account creation and history search and preview
+- Search recommendations depending on previous queries
+
 
 
 
