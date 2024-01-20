@@ -1,6 +1,6 @@
 # GoogleClone - Full Clone of Google Search Engine
 
-Users can navigate the web using a simple interface utilizing MaterialUI and React JS that mirror's Google search engine. Search page responses are pulled from the Google Search API to display real time websites with associated links and descriptions. A React application with a Firebase backend for deployment.
+Users can navigate the web using a simple interface utilizing MaterialUI and React JS that mirror's Google search engine. Search page responses are pulled from the Google Search API to display real time websites with associated links and descriptions. A React application with a Firebase backend for deployment using modular component structure to enhance organization and maintainability.
 
 ## Features
 
@@ -46,6 +46,49 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
 
 - Search Page queries results from Google with Links
 <img src="https://github.com/SaminSarker05/GoogleClone/blob/main/images/search.png" width=80%>
+
+## React Components
+
+<table>
+
+<tr>
+<td width="33%"">
+<samp>StateProvider.js</samp>
+</td>
+<td width="66%">
+<samp>Uses React Component API to create global state the enwraps application</samp>
+</td>
+</tr>
+
+   
+<tr>
+<td width="20%"">
+<samp>SearchBar Component</samp>
+</td>
+<td width="80%">
+<samp>Functional component using useState hook to manage search input and dispatch actions to reducer.js</samp>
+</td>
+</tr>
+
+<tr>
+<td width="33%"">
+<samp>Reducer.js</samp>
+</td>
+<td width="66%">
+<samp>Pure function that updates the current state with action type</samp>
+</td>
+</tr>
+
+<tr>
+<td width="33%"">
+<samp>useGoogleSearch.js</samp>
+</td>
+<td width="66%">
+<samp>Custom hook that sends asynchronous request to Google API to fetch results</samp>
+</td>
+</tr>
+  
+</table>
 
 
 
