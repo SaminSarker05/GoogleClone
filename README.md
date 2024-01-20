@@ -44,6 +44,9 @@ Users can navigate the web using a simple interface utilizing MaterialUI and Rea
 - Home Page where users can query items
 <img src="https://github.com/SaminSarker05/GoogleClone/blob/main/images/home.png" width=80%>
 
+- Search Page queries results from Google with Links
+<img src="https://github.com/SaminSarker05/GoogleClone/blob/main/images/search.png" width=80%>
+
 
 
 
